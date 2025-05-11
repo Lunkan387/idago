@@ -263,7 +263,7 @@ func newIdaWithName(name string) {
 		"--env", fmt.Sprintf("DISPLAY=%s", display),
 		"--volume", "/tmp/.X11-unix:/tmp/.X11-unix",
 		"--volume", fmt.Sprintf("%s:/home/ubuntu", pwd),
-		"idapro9ubuntu",
+		ImageName,
 	)
 
 	dockerCmd.Stdin = os.Stdin
